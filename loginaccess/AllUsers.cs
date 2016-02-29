@@ -31,7 +31,7 @@ namespace loginaccess {
                 checkBox2.Checked = false;
             }
         }
-        //Отметка checkbox перелистывании пользователей
+        //Отметка checkbox при перелистывании пользователей
         private void Checked(XElement element) {
             textBox1.Text = element.Element("login").Value;
             int block = Convert.ToInt32(element.Element("block").Value);
